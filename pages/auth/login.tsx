@@ -23,9 +23,6 @@ const login = ({
                   <div key={provider.name}>
                     <button
                       className='group relative inline-flex items-center justify-start overflow-hidden rounded bg-white px-6 py-3 font-medium transition-all hover:bg-white'
-                      // このボタンを押すと GitHub による認証が行われます
-                      // また、認証後のリダイレクト先をルートパスに設定しています
-                      // リダイレクト先については後ほど変更します
                       onClick={() =>
                         signIn(provider.id, {
                           callbackUrl: '/articles',
